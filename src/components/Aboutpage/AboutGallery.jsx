@@ -22,7 +22,7 @@ function AboutGallery() {
 
         return () => clearInterval(interval);
 
-    }, []);
+    }, [images.length]);
 
     return (
 
