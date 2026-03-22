@@ -69,9 +69,9 @@ return(
 
 <div className="test-icons">
 
-<img src="/icon4.png"/>
+<img src="/icon4.png" alt=""/>
 
-<img src="/icon2.png"/>
+<img src="/icon2.png" alt=""/>
 
 </div>
 
