@@ -1,0 +1,251 @@
+/* SPECIAL BANNER */
+
+.special-banner {
+
+    background: #f5dede;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 60px;
+
+}
+
+.special-banner h1 {
+
+    color: #b77a2d;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+.special-banner p {
+
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+
+}
+
+.special-banner-img {
+
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+/* CLASSIC CAKES */
+
+.classic-cakes {
+    background: #ffffff;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.classic-cakes h2 {
+    color: #b77a2d;
+    font-size: 36px;
+}
+
+
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* CARD */
+
+.cake-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* FIXED IMAGE SIZE */
+
+.cake-card img {
+    width: 100%;
+    height: 300px;
+    /* FIXED HEIGHT */
+    object-fit: cover;
+    /* IMAGE CROP */
+    border-radius: 10px;
+}
+
+/* TEXT */
+
+.cake-card h4 {
+    color: #b77a2d;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* HOVER */
+
+.cake-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+
+.cake-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.cake-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+/* SLIDER */
+
+.special-slider-section {
+    background: #fff3f3;
+    text-align: center;
+    padding: 40px;
+}
+
+.special-slider-section h2 {
+    color: #b77a2d;
+    font-size: 36px;
+}
+
+
+
+.slider {
+    width: 800px;
+    /* banner size */
+    height: 500px;
+    /* fixed height */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* IMAGE */
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* image crop */
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+/* TITLE */
+
+.slider h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+
+/* PREORDER */
+
+.preorder {
+
+    background: #f5dede;
+    text-align: center;
+    padding: 80px;
+
+}
+
+.preorder h2 {
+
+    color: #b77a2d;
+    font-size: 36px;
+
+}
+
+.preorder-btns {
+
+    margin-top: 20px;
+
+}
+
+.preorder button {
+
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 1px solid #b77a2d;
+    background: white;
+    cursor: pointer;
+
+}
+
+.preorder button:hover {
+
+    background: #b77a2d;
+    color: white;
+
+}
+
+
+
+
+@media (max-width:768px) {
+
+    .cake-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 10px;
+        gap: 15px;
+
+    }
+
+    .slider {
+
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .special-banner {
+        padding: 50px 20px;
+        margin-top: 40px;
+    }
+
+    .special-banner h1 {
+        font-size: 30px;
+    }
+
+    .special-banner-img {
+        width: 60%;
+    }
+
+    .classic-cakes,
+    .special-slider-section,
+    .preorder {
+        padding: 50px 20px;
+    }
+
+    .preorder h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cake-grid {
+        grid-template-columns: 1fr;
+    }
+}

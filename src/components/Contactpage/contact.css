@@ -1,0 +1,155 @@
+/* CONTACT HERO */
+
+.contact-hero {
+    background: #f5dede;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 80px;
+}
+
+.contact-hero h1 {
+    color: #b77a2d;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.contact-hero p {
+    font-size: 18px;
+}
+
+
+
+.contact-letter {
+    width: 400px;
+    margin-top: 25px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-8px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+
+
+
+/* CONTACT SECTION */
+
+.contact-section {
+    padding: 80px 40px;
+    background: #ffffff;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* FORM */
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.contact-form span {
+    color: red;
+}
+
+.contact-form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* BUTTONS */
+
+.contact-btns {
+    margin-top: 20px;
+}
+
+.contact-btns button {
+    padding: 10px 25px;
+    margin-right: 10px;
+    border-radius: 25px;
+    border: 1px solid #b77a2d;
+    background: white;
+    color: #b77a2d;
+    cursor: pointer;
+}
+
+.contact-btns button:hover {
+    background: #b77a2d;
+    color: white;
+}
+
+
+/* CONTACT INFO */
+
+.contact-info {
+    background: #fff3f3;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-info img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    color: #b77a2d;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero {
+        padding: 60px 20px;
+        margin-top: 60px;
+    }
+
+    .contact-hero h1 {
+        font-size: 32px;
+    }
+
+    .contact-letter {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contact-section {
+        padding: 50px 20px;
+    }
+}
