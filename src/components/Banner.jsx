@@ -2,27 +2,27 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 
+const slides = [
+    {
+        image: "/sthali.png",
+        title: "Traditional Indian Sweets",
+        subtitle: "Taste the sweetness of authentic mithai"
+    },
+    {
+        image: "/snacksthali.png",
+        title: "Snacks & Namkeens",
+        subtitle: "Crispy and spicy snacks for every mood"
+    },
+    {
+        image: "/milkp.png",
+        title: "Fresh Dairy Products",
+        subtitle: "Pure milk, paneer and dairy delights"
+    }
+];
+
 function Banner() {
 
     const navigate = useNavigate();   // ⭐ important
-
-    const slides = [
-        {
-            image: "/sthali.png",
-            title: "Traditional Indian Sweets",
-            subtitle: "Taste the sweetness of authentic mithai"
-        },
-        {
-            image: "/snacksthali.png",
-            title: "Snacks & Namkeens",
-            subtitle: "Crispy and spicy snacks for every mood"
-        },
-        {
-            image: "/milkp.png",
-            title: "Fresh Dairy Products",
-            subtitle: "Pure milk, paneer and dairy delights"
-        }
-    ];
 
     const [current, setCurrent] = useState(0);
 

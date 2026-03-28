@@ -890,22 +890,36 @@ body {
 
     /* BANNER */
     .banner {
-        min-height: 400px;
-        height: 50vh;
+        min-height: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-img {
+        height: 45vh;
+        min-height: 250px;
     }
 
     .banner-text {
-        right: 5%;
+        position: static;
+        transform: none;
+        width: 100%;
         text-align: center;
-        width: 90%;
+        padding: 30px 20px;
+        background: #fff;
+        color: #333;
+        box-sizing: border-box;
     }
 
     .banner-text h1 {
         font-size: 28px;
+        color: #a87917;
     }
 
     .banner-text p {
         font-size: 15px;
+        color: #555;
     }
 
     /* SHOP INFO */
